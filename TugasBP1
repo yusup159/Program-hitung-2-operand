@@ -1,0 +1,30 @@
+class Hitung(val x:Int ,val y:Int ){
+
+    private var hasil:Int=0
+    fun kali(){
+        hasil=x*y
+        println("Hasil Perkalian dari $x x $y = $hasil")
+    }
+    fun bagi(){
+        hasil=x/y
+        println("Hasil Pembagian dari $x : $y = $hasil")
+    }
+    fun tambah(){
+        hasil=x+y
+        println("Hasil Pertambahan dari $x + $y = $hasil")
+    }
+    fun kurang(){
+        hasil=x-y
+        println("Hasil Pengurangan dari $x - $y = $hasil")
+    }
+
+}
+
+fun main(){
+    val hitung=Hitung(12,2)
+    hitung.kali()
+    hitung.bagi()
+    hitung.kurang()
+    hitung.tambah()
+
+}
